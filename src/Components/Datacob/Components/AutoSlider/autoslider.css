@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bakbak+One&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Fjalla+One&family=Goldman:wght@400;700&family=Koulen&family=Monomaniac+One&family=Rubik+Mono+One&family=Signika+Negative:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.autoslider-top{
+    /* background-image: radial-gradient(106.01% 100% at 0 -18.75%, #03212f 0, #011117 100%); */
+    position:  relative;
+    /* top: 86px; */
+    min-height: 480px;
+    /* height: calc(100vh - 86px);  */
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    background: url('../../Images/AutoSlider2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.autoslider-top::before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 180vh;
+    /* background : linear-gradient(to right, #ffaa006e, #fdd27b6e); */
+    background-color: rgba(0, 0, 0, 0.589);
+    backdrop-filter: blur(0.2px);
+    z-index: 2;
+}
+
+
+
+.custom-shape-divider-bottom-1719145151 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 5;
+
+}
+
+.custom-shape-divider-bottom-1719145151 svg {
+    position: relative;
+    display: block;
+    width: calc(186% + 1.3px);
+    height: 245px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1719145151 .shape-fill {
+    fill: #ffffff;
+}
+
+.autoslider-container{ 
+    border: 1px solid transparent;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    width: 94%;
+    height: 90%;
+    /* background-color: #ffab00; */
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.design-path{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #ffab00; */
+    background-color: white;
+    /* clip-path: polygon(100% 0, 100% 100%, 100% 100%, 55% 100%, 66% 58%, 82% 0); */
+    clip-path: polygon(100% 52%, 0% 100%, 100% 100%);
+    z-index: 4;
+}
+
+
+.slider-texts{
+    position: relative;
+    top: 10%;
+    left: 0%;
+    z-index: 20;
+    color: white;
+    /* letter-spacing: 0.5em; */
+    /* text-transform: uppercase; */
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.slider-text-title{
+    font-family: "Goldman", sans-serif;
+    /* text-align: center; */
+    text-shadow: 
+    -1px -1px 0 #ffab00,  
+    1px -1px 0 #ffab00,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.slider-text-desc{
+    font-family: "Goldman", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    /* background: linear-gradient(to right, rgb(245, 1, 192) , rgb(99, 202, 250)); */
+    background: linear-gradient(to right, rgb(248, 248, 248) , rgb(241, 241, 241));
+    background-clip: text;
+    color: transparent;
+}
+
+.slider-text-info{
+    margin-top: 2rem;
+    /* font-family: "Barlow Condensed", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    /* color: #ffc248; */
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+@media screen and (max-width : 920px) {
+    .design-path{
+        clip-path:  polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 0);;
+    }
+}
+
+
+@media screen and (max-width : 400px){
+    .slider-texts{
+        font-size: 3rem;
+        left: 0;
+    }
+}
+
+
+
+@media screen and (max-width : 420px) {
+    .custom-shape-divider-bottom-1719145151{
+        display: none;
+    }
+
+    .autoslider-top::before{
+        background-color: rgba(0, 0, 0, 0.425);
+    }
+    .slider-text-desc{
+        font-size: 1.5rem;
+    }
+    .slider-text-info{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width : 540px) {
+   .slider-text-title{
+    font-size: 3rem;
+    margin: 3rem 0;
+   }
+   .autoslider-container{
+    padding: 0;
+}
+}
+
+@media screen and (max-width : 240px) {
+
+    .slider-text-title{
+        margin: 3rem 0;
+        font-size: 2rem;
+    }
+ }

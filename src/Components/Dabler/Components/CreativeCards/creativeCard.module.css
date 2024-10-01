@@ -1,0 +1,115 @@
+
+
+
+
+
+.creative-card-wrapper{
+    /* width: 300px; */
+    /* height: 400px; */
+    min-width: 128px;
+    min-height: 360px;
+    /* border: 1px solid white; */
+    position: relative;
+    /* box-shadow: 0px 0px 5px 1px white; */
+    /* z-index: 2; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0 0 4px 2px rgb(145, 145, 145);
+        transform: translateY(-6px);
+    }
+}
+
+
+.creative-card-wrapper::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    filter: blur(64px); 
+    background: linear-gradient( #00ccff, #d500f9);
+    /* z-index: 3; */
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function:linear;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    /* animation: rotate 4s linear infinite; */
+}
+
+
+.creative-card-wrapper::after{
+    content: '';
+    position: absolute;
+    /* background-color: rgb(15, 15, 29); */
+    background-color: rgb(255, 255, 255);
+    inset: 3px;
+    border-radius: inherit;
+}
+
+
+
+.creativecard-data-container{
+    padding: 6% 2% 6% 6%;
+    color: rgb(9, 9, 41);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.creativecard-data-description-section{
+    margin-bottom: 2rem;
+}
+
+
+.creativecard-data-btn-container{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.creativecard-btn{
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    color: rgb(8, 8, 41);
+    border-radius: 18px;
+    position: relative;
+    z-index: 12;
+    background: white;
+    font-family: system-ui;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0 0 4px 1px gray;
+    }
+}
+
+.creativecard-btn::before{
+    padding: 0.6rem 1.2rem;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -2px;
+    background: linear-gradient(to right, #00ccffd3, #d400f9d3);
+    border-radius: 20px;
+}
+
+
+
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}

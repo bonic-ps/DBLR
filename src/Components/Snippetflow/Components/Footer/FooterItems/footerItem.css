@@ -1,0 +1,23 @@
+.each-item-links-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+
+.each-item-title{
+    margin-bottom: 1.6rem;
+    color: #c0c3d9;
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+.each-link{
+    color: #989dbf;
+    font-size: 1rem;
+    text-align: start;
+    &:hover{
+        color: black;
+        transition-delay: 0.1s ;
+        translate: 2px;
+    }
+}

@@ -1,0 +1,111 @@
+.about-top{
+    position: relative;
+    top: 86px;
+    background-color: #fff;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-head{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.8rem 0;
+    letter-spacing: 0.04rem;
+    font-family: sans-serif;
+    color: black;
+    background: linear-gradient(to right, rgb(117, 25, 25), rgb(40, 40, 180));
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.about-description{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    /* margin-top: 1.2rem; */
+    margin-bottom: 2.4rem;
+    color: rgb(85, 84, 84);
+}
+
+.about-description-head{
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+@media screen and (min-width : 520px) {
+    .about-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .about-cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width : 520px) {
+    .about-container{
+        min-height: 200px;
+        text-align: center;
+    }
+
+    .about-head{
+        font-size: 1.45rem;
+        line-height: 1.75rem;
+    }
+
+    .about-description{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .about-cards-wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+
+
+
+
+
+/* .parallax-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../Images/nature.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+}
+
+.parallax-texts{
+    color: white;
+    font-size: x-large;
+    font-weight: 800;
+} */
+
+
+

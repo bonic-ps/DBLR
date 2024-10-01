@@ -1,0 +1,83 @@
+.feature-card-top{
+    /* background: linear-gradient(62deg, #8EC5FC, #E0C3FC); */
+    /* background: linear-gradient(90deg, #00DBDE, #FC00FF); */
+    /* background: linear-gradient(62deg, #FBAB7E, #F7CE68); */
+    background-image: url('../../Images/card4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 400px;
+    min-height: 240px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px 2px grey;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-card-top::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); */
+    backdrop-filter: blur(2px);
+}
+
+.feature-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fc-text-description{
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+    font-size: 1.02rem;
+}
+
+.fc-text-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.8rem 0;
+    letter-spacing: 0.04rem;
+}
+
+
+
+
+@media screen and (max-width : 400px) {
+    .feature-card-top{
+        min-width: 150px;
+        min-height: 240px;
+        border-radius: 16px;
+    }
+    
+    .feature-card-container{
+        padding: 1rem 0.2rem;
+        z-index: 1;
+        position: absolute;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .fc-text-description{
+        font-family: sans-serif;
+        line-height: 1.4rem;
+        letter-spacing: 0.03rem;
+        font-size: 1rem;
+    }
+    
+    .fc-text-title{
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 1rem 0;
+        letter-spacing: 0.01rem;
+    }
+    
+}

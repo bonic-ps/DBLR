@@ -1,0 +1,67 @@
+.feat-card-top{
+    /* border-left: 8px solid rgba(255, 255, 255, 0.8); */
+    /* color: white; */
+    color: black;
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    /* background: linear-gradient(to right , rgba(0,0,0,0.7), rgba(0,0,0,0.7)); */
+    /* background: linear-gradient(to right , rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); */
+    background: linear-gradient(to right , rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+
+    /* min-width: 420px; */
+    max-width: 420px;
+    height: 188px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px white;
+}
+
+.feat-card-container{
+    height: -webkit-fill-available;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 1rem;
+    border-left: 8px solid rgba(255, 255, 255, 0);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition: border-left 0.2s ease-in-out, transform 0.4s ease-in;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        border-left: 8px solid rgba(255, 255, 255, 0.76);
+        transform: translateX(2px);
+        transition: border-left 0.2s ease-in-out, transform 0.4s ease-in;
+        background-color: white;
+    }
+}
+
+.feat-card-img{
+    width: 24%;
+    /* min-width: 140px; */
+}
+
+.feat-card-texts{
+    max-width: 76%;
+}
+
+.feat-card-head{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.feat-card-desc{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width : 520px) {
+    .feat-card-top{
+        height: 196px;
+    }
+}

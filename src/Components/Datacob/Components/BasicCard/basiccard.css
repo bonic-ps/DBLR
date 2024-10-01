@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bakbak+One&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Fjalla+One&family=Goldman:wght@400;700&family=Koulen&family=Monomaniac+One&family=Rubik+Mono+One&family=Signika+Negative:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+
+.basic-card-top{
+    background-color: white;
+    max-width: 400px;
+    min-height: 238px;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 20px;
+    /* box-shadow: 0 0 16px 8px rgb(243, 239, 239);  */
+    box-shadow: 0 3px 5px 2px #7a2a7370; 
+    position: relative;
+    overflow: hidden;
+    /* row-gap: 2rem;
+    column-gap: 2rem; */
+}
+
+.basic-card-design{
+    height: 16px;
+    /* background: linear-gradient(160deg, #0093E9, #80D0C7); */
+    /* background: linear-gradient(160deg, #ffab00, #ffaa006e); */
+    background: linear-gradient(to right, rgb(182, 48, 153) , rgba(165, 40, 159, 0.678));
+}
+
+.basic-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 1rem 1rem 2rem
+}
+
+.basic-card-title{
+    color: #2f2f2f;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.basic-card-desc{
+    font-family: sans-serif;
+    color: rgb(97 96 96);
+    font-family: "Roboto" , sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.4rem;
+}

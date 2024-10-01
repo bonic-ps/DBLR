@@ -1,0 +1,11 @@
+.img-basic-styles{
+   width: 100%;
+   height: 480px;
+}
+
+
+@media screen and (max-width : 520px) {
+    .img-basic-styles{
+        height: 460px;
+    }
+}

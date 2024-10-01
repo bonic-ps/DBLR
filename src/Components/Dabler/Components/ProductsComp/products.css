@@ -1,0 +1,36 @@
+
+
+.products-container{
+    background-color: rgb(255, 255, 255);
+    min-height: 600px;
+    position: relative;
+    top: 86px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.products-content-section{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-content-section > * {
+    max-width: 480px;
+}
+
+.products-head-section{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(23, 25, 66);
+}
+
+@media screen and (max-width: 800px) {
+    .products-content-section{
+        flex-direction: column;
+    }
+}

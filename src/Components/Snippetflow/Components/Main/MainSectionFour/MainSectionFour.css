@@ -1,0 +1,64 @@
+@media screen and (min-width: 944px) {
+    .main-section-four-container{
+        background-color: #1c1651;
+        position: relative;
+        z-index: 1;
+        padding: 3rem 1.6rem 3rem 1.6rem;
+        min-height: 460px;
+    }
+    
+    
+    .sectionfour-cards{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+        /* margin: auto; */
+        /* max-width: 740px; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .sectionfour-heading > *{
+        margin-bottom: 1.8rem;
+        color: white;
+    }
+
+    .sectionfour-cards > *{
+        min-width: max-content;
+        max-width: min-content;
+        width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 943px) {
+    .main-section-four-container{
+        background-color: #1c1651;
+        position: relative;
+        z-index: 1;
+        padding: 3rem 1.6rem 3rem 1.6rem; 
+    }
+    
+    
+    .sectionfour-cards{
+        display: flex;
+        flex-direction: column;
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+    }
+    
+
+
+    .sectionfour-heading > *{
+        margin-bottom: 1.4rem;
+        color: white;
+    }
+
+    .sectionfour-cards > *{
+        width: 100%;
+    }
+}

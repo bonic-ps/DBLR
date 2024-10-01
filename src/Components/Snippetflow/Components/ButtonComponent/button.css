@@ -1,0 +1,15 @@
+.buttoncomp-container{
+    padding: 0.6rem 1rem;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    /* background-color: attr(databg); */
+    color: white;
+    display: inline-block;
+    width: fit-content;
+
+    text-decoration: none;
+    background-color: rgb(244, 244, 255);
+    font-weight: 500;
+    color: rgb(67, 59, 251);
+    border-color: rgb(244, 244, 255);
+}

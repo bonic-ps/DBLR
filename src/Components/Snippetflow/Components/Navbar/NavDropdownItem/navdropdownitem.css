@@ -1,0 +1,36 @@
+.navdropdownitem-container{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 10px 6px;
+    text-decoration: none;
+    &:hover{
+        background-color: #edebff;
+        /* background-color: rgba(255, 255, 255, 0.24); */
+        border-radius: 10px;
+        color: white;
+    }
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    transition-property: background-color, border-radius;
+}
+
+.navdropdownitem-details-container{
+    text-align: start;
+    /* color: #585d89;  this is for the top heading */
+}
+
+
+.navdropdownitem-details-container > h4{
+    color: #232172;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.navdropdownitem-details-container > p{
+    color: #494b62;
+    /* color: white; */
+    margin-bottom: 0;
+    font-size: .9rem;
+    font-weight: 400;
+}

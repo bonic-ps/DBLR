@@ -1,0 +1,176 @@
+
+
+.ira-main-container{
+    height: 100vh;
+    background: url('../../Images/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width : 700px) {
+    .ira-main-wrapper{
+        padding: 140px 2rem 2rem;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .ira-main-wrapper > h1{
+      font-size: 6rem;
+    }
+
+    .ira-main-wrapper > p{
+        font-size: x-large;
+        font-weight: 400;
+        width: 60%;
+    }
+
+    .ira-main-wrapper > div{
+        font-family: sans-serif;
+        font-size: 3.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width : 700px) {
+    .ira-main-wrapper{
+        padding: 140px 4% 2rem;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .ira-main-wrapper > h1{
+      font-size: 3rem;
+    }
+
+    .ira-main-wrapper > p{
+        font-size: large;
+        font-weight: 200;
+        width: 80%;
+    }
+
+    .ira-main-wrapper > div{
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+.feature-slider-top{
+    position : relative;
+    /* top : 86px; */
+    /* background : #232121; */
+    background : white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.feature-slider-container{
+    padding: 2rem 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: rgba(5, 5, 5, 0.39); */
+}
+ 
+.feature-slider-head{
+    color: rgb(5, 5, 44);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.caption-desc{
+    font-family: "Roboto" sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width : 520px) {
+    
+    .feature-slider-container{
+        padding: 2rem 0;
+    }
+}

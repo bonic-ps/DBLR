@@ -1,0 +1,79 @@
+.aboutproduct-top-section{
+    background-image: linear-gradient(to right top, #f031c7, #da56de, #c16fef, #a682fa, #8d92ff);
+}
+
+@media screen and (min-width : 620px) {
+    .aboutproduct-container{
+        /* background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #764ABC; */
+        color: white;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+    
+    .aboutproduct-container > * {
+        width: 50%;
+    }
+    
+    .aboutproduct-heading{
+        margin: 0 0 1.8rem 0;
+        font-size: xxx-large;
+    }
+    
+    .aboutproduct-description{
+        margin: 0 0 1.8rem 0;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    
+    .aboutproduct-btn{
+        margin: 0 0 1.8rem 0;
+    }
+}
+
+
+
+@media screen and (max-width : 680px) {
+    .aboutproduct-container{
+        /* background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #764ABC; */
+        color: white;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+    
+    .aboutproduct-container > * {
+        /* width: 50%; */
+    }
+    
+    .aboutproduct-heading{
+        margin: 0 0 1.8rem 0;
+        font-size: 1.8rem;
+    }
+    
+    .aboutproduct-description{
+        margin: 0 0 1.8rem 0;
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .aboutproduct-btn{
+        margin: 0 0 1.8rem 0;
+    }
+}
+
+
+
+@media screen and (max-width : 200px) {
+    .aboutproduct-container{
+        padding: 2rem 0;
+    }
+}

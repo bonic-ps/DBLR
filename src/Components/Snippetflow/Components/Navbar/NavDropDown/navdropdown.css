@@ -1,0 +1,125 @@
+
+
+
+@media screen and (min-width: 768px){
+
+    .navdropdown-container{
+        
+        display: flex;
+        position: absolute;
+        top: 6%;
+        width: 100%;
+        height: 80%;
+        background-color: #ffffff;  
+        /* background-image: url('../../../Images/laptopImage.jpg');
+        background-repeat: no-repeat; */
+        /* background-blend-mode: lighten; */
+        /* background-size:; */
+        border-radius: 0.5rem;
+        /* padding: 10px; */
+        padding: 1.8rem;
+        min-width: 350px;
+        box-shadow: 0 0 50px 20px rgba(26,25,77,.15);
+        overflow-y: scroll;
+        scrollbar-width: none;
+        /* 32413c */
+        /* display: flex;
+        position: absolute;
+        top: 8%;
+        left: 6%;
+        width: 80%;
+        background-color: aquamarine;
+        border-radius: 18px;
+        padding: 10px;
+        min-width: 350px;
+        gap: 10px; */
+    }
+    
+    .navdropdown-each-section{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: start;
+    }
+    .navdropdown-each-section > h2{
+        color: #585d89;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+    }
+
+    .navdropdown-top-element{
+
+    
+        /* max-width: 800px;
+        min-width: 360px;
+        position: fixed;
+        width: 100%;
+        left: 13%;
+        min-height: 400px;
+        display: none; */
+
+        max-width: 80vw;
+        min-width: 360px;
+        position: fixed;
+        width: 100%;
+        top: 50px;
+        left: 10%;
+        min-height: 400px;
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .navdropdown-container{
+        /* display: flex;
+        width: 70%;
+        background-color: aquamarine;
+        border-radius: 18px;
+        padding: 10px; */
+    
+        display: flex;
+        position: absolute;
+        top: 8%;
+        left: 6%;
+        width: 80%;
+        background-color: aquamarine;
+        border-radius: 18px;
+        padding: 10px;
+        min-width: 350px;
+        gap: 10px;
+    }
+    
+    .navdropdown-each-section{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: start;
+    }
+    
+    .navdropdown-top-element{
+        /* position: fixed;
+        width: 100vw;
+        top: 156%;
+        left: -140%;
+        display: none; */
+    
+        max-width: 800px;
+        min-width: 360px;
+        position: fixed;
+        width: 100%;
+        /* top: 16%; */
+        left: 13%;
+        min-height: 400px;
+        display: none;
+    }
+}
+
+

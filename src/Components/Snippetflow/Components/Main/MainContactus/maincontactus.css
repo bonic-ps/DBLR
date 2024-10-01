@@ -1,0 +1,90 @@
+/* background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%); */
+
+.main-contact-container{
+    min-height: 400px;
+    /* background: linear-gradient(135deg, #ce4be8a8 0%, #207ce5b4 100%); */
+    background: url('../../../Images/maincontactbg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: cover;
+    position: relative;
+    z-index: 20;
+}
+
+.main-contact-container::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(135deg, #ce4be8ce 0%, #207ce5c5 100%);
+    z-index: 22;
+}
+
+.main-contact-contents{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 23;
+    color: whitesmoke;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+.main-contact-contents > h2{
+    margin-bottom: 2rem;
+}
+
+.main-contact-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+}
+.main-contact-input-wrapper > textarea {
+    resize: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+}
+
+.main-contact-inputs-holder{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    gap: 1rem;
+}
+
+.main-contact-inputs-holder > *{
+    padding: 0.6rem 0.8rem;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    flex: 1;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.main-contact-btn > button{
+    width: 100px;
+    padding: 0.8rem 1rem;
+    background: white;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    color: rgb(12, 8, 70);
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0 0 7px 0px whitesmoke;
+        background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+        color: whitesmoke;
+    }
+}
+

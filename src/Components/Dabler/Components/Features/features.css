@@ -1,0 +1,83 @@
+/* .features-top{
+    position: relative;
+    top: 86px;
+    background: url('../../Images/forest.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+} */
+
+.features-top{
+    position: relative;
+    top: 86px;
+    background: url('../../Images/features-bg2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+    z-index: 10;
+}
+
+
+.features-top::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(7, 7, 7, 0.582);
+    z-index: 12;
+}
+
+
+.features-container{
+    padding: 2rem 1.6rem;
+    position: relative;
+    z-index: 14;
+}
+
+
+.feature-section-head{
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, 3px 1px 0 #000, 3px 1px 0 #000;
+    margin-bottom: 2rem;
+}
+
+
+
+
+@media screen and (min-width : 400px) {
+    .feature-section-two{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+@media screen and (max-width : 400px) {
+    .feature-section-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width : 320px) {
+    .features-container{
+        padding: 2rem 0;
+    }
+}

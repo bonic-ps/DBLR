@@ -1,0 +1,214 @@
+
+
+.ira-nav-container{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+.ira-nav-wrapper{
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 4% 0 4%;
+}
+
+.ira-nav-right {
+    height: inherit;
+    width: 60%;
+}
+
+.ira-nav-right > * {
+    display: inline-block;
+    height: inherit;
+    padding: 1rem;
+    align-content: center;
+    text-align: center;
+    /* border: 1px solid white; */
+    min-width: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.ira-nav-link-hovline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    z-index: 4;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s ease-in-out;
+}
+
+.ira-nav-link-hovline:hover::before{
+    width: 84%;
+}
+
+
+
+.ira-nav-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.ira-hb-logo{
+    width: 42px;
+    height: 42px;
+}
+
+
+.ira-nav-mobile-menu-container{
+    display: none;
+}
+
+@media screen and (min-width : 1080px) {
+    .ira-nav-container{
+        background: rgb(27, 13, 13);
+        color: white;
+        background-color: transparent;
+        transition: all 0.5s ease;
+    }
+
+    .ira-nav-scroll{
+        background-color: white;
+        color: rgb(8, 7, 49);
+        box-shadow: 0 1px 2px 1px rgb(172, 172, 172);
+    }
+
+    .ira-nav-hb-container{
+        display: none;
+    }
+
+    .ira-nav-wrapper{
+        justify-content: space-around;
+    }
+
+    .ira-nav-links{ /* For adding the submenu while hovered. use it for links that has submenu*/
+        position: relative;
+    }
+
+    .ira-nav-hov-menu-container{
+        position: absolute;
+        visibility: hidden;
+        min-width: 450px;
+        min-height: 300px;
+        color: white;
+        font-family: sans-serif;
+        background-color: rgb(15, 10, 63);
+        border-radius: 20px;
+        top: 95%;
+        left: -14%;
+        z-index: 6;
+        opacity: 0;
+        transition: all 0.8s ease;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 1px 6px 2px grey;
+    }
+
+    .ira-nav-links:hover .ira-nav-hov-menu-container{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .ira-nav-hov-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        padding: 4rem 2rem 2rem;
+    }
+
+    .ira-nav-hov-menu > * {
+        padding-bottom: 1rem;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width : 1080px) {
+    .ira-nav-container{
+        background-color: white;
+        color: rgb(17, 24, 65);
+    }
+
+    .ira-nav-wrapper{
+        justify-content: space-between;
+    }
+
+    .ira-nav-hb-container{
+        display: block;
+        cursor: pointer;
+    }
+
+    .ira-nav-right{
+        display: none;
+    }
+
+    .ira-nav-mobile-menu-container{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /* background-color: rgba(80, 68, 255, 0.884); */
+        background-color: rgba(248, 248, 248, 0.952);
+        min-height: 300px;
+        padding: 2rem 3%;
+        color: rgb(7, 17, 44);
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 500;
+        box-shadow: 0 10px 13px 0px #0000007c;
+    }
+
+    .ira-nav-mobile-menu{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        text-align: start;
+    }
+
+    .ira-nav-mobile-menu > * {
+        padding: 0.6rem;
+    }
+
+    .ira-nav-mobile-link{
+        position: relative;
+        z-index: 10;
+    }
+
+    .ira-nav-mobile-link::before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        left: 0;
+        top: 100%;
+        right: 0;
+        z-index: 12;
+        background: rgb(6, 17, 65);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .ira-nav-mobile-link:hover::before{
+        opacity: 1;
+    }
+
+    .ira-hide-mobile-menu{
+        display: none;
+    }
+}
+

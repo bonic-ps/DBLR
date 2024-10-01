@@ -1,0 +1,110 @@
+.contactuspage-top{
+    min-height: 514px;
+    position: relative;
+    /* top: 86px; */
+    /* background-color: rgb(255, 97, 97); */
+    overflow: hidden;
+    background-image: url('../../Images/contactsbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: blur(4px); */
+}
+
+
+.contactuspage-container{
+
+}
+
+
+
+.contactuspage-data-container{
+    /* text-align: center; */
+    position: relative;
+    /* width: inherit;
+    height: inherit; */
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.contactuspage-bg{
+    /* position: absolute;
+    top: -250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Images/contactsbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    transform: rotate(270deg) scale(2.2);
+    z-index: -1; */
+}
+
+.contactuspage-head{
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+    font-family: system-ui;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contactuspage-form-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 2rem 1rem;
+    backdrop-filter: blur(6px);
+    min-height: 300px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 1.658);
+    background: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.534);
+}
+
+.contactuspage-form-one > input{
+    background: none;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid rgb(255 255 255 );
+    padding: 0.6rem 1.2rem;
+    width: 64%;
+    margin-bottom: 6%;
+    &::placeholder{
+        color: white;
+    }
+}
+
+
+.contactuspage-form-one > button{
+    background: none;
+    border-radius: 12px;
+    color: black;
+    border: 1px solid rgb(255 255 255 );
+    padding: 0.6rem 1.2rem;
+    width: 40%;
+    margin-top: 4%;
+    transition: all 0.3s ease-in;
+    background-color: white;
+    &:hover{
+        background-color: white;
+        color: black;
+        border-radius: 30px;
+        scale: 1.1;
+    }
+}
+
+
+@media screen and (max-width : 520px) {
+    .contactuspage-form-one{
+        width: 96%;
+        padding: 0;
+    }
+}

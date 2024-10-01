@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import App1 from './Components/Dabler/App';
+import Snippetflow from './Components/Snippetflow/App';
+import Datacob from './Components/Datacob/App';
+import Ira from './Components/Ira/Ira';
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App1 />}/> 
+          <Route path="/snippetflow" element={<Snippetflow />}/> 
+          <Route path="/datacob" element={<Datacob />}/> 
+          <Route path="/ira" element={<Ira />}/> 
+          {/* <Route path="/" element={<div>Hello bro</div>}/> 
+          <Route path="*" element={<div>No page found</div>}/>  */}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
