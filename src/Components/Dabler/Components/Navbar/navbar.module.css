@@ -35,15 +35,22 @@
 
     .nav-options > .nav-each-option > a , .right-section > * {
         padding: 30px 1rem;
+        /* padding: 20px 1rem 18px 1rem; */
         text-decoration: none;
         color: white;
         cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover{
+            background: rgba(255, 255, 255, 0.705);
+            color: black;
+        }
     }
+
 
     .nav-each-option:hover > .nav-each-hov-section{
         display: flex;
         flex-direction: row;
-        column-gap: 2rem;
+        column-gap: 0rem;
     }
 
     .nav-each-hov-section{
@@ -51,7 +58,7 @@
         display: none;
         left: 0;
         margin-top: 26px;
-        min-height: 300px;
+        min-height: 400px;
         position: absolute;
         width: 100%;
         z-index: 10;
@@ -93,11 +100,13 @@
     }
 
     .nav-hov-description{
-        width: 30%;
+        width: 28%;
         color: white;
-        padding: 20px 1rem;
+        padding: 24px 1.4rem;
         text-decoration: none;
         background-color: black;
+        /* letter-spacing: 1.1px; */
+        line-height: 1.6rem;
     }
 
     .nav-hov-options > * {
@@ -162,12 +171,13 @@
     .hamburger-menu-dd-top{
         background-color: rgba(0, 0, 0, .5);
         /* display: none; */
-        top: 55px;
+        /* top: 55px; */
+        top: 100%;
         left: 0;
-        margin-top: 31px;
+        /* margin-top: 31px; */
         /* min-height: 300px; */
-        min-height: 100vh;
-        height: 60vh;
+        /* min-height: 100vh; */
+        height: 87vh;
         /* overflow-y: scroll; */
         /* scrollbar-width: thin; */
         position: absolute;
@@ -175,6 +185,7 @@
         z-index: 10;
         padding: 1rem 2rem;
         backdrop-filter: blur(4px);
+        overflow-y: scroll;
     }
 
     .show-hb-dd{

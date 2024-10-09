@@ -124,12 +124,6 @@ export default function Navbar(props){
                                 <div className="nav-hov-sub-options">
                                     <a href="#">Documentation</a>
                                     <a href="#">Blogs</a>
-                                    {/* <a href="#">Aerospace</a>
-                                    <a href="#">WindTech</a> */}
-                                    {/* <a href="#">super</a>
-                                    <a href="#">fire</a>
-                                    <a href="#">winter</a>
-                                    <a href="#">summer</a> */}
                                 </div>
                             </div>
 
@@ -156,7 +150,7 @@ export default function Navbar(props){
 
             <div className="right-section">
                 {/* <Link to="/contact" element={<SliderSection />}>Contact Us</Link> */}
-                <a href="#">Login</a>
+                <a href="#">Login</a> 
             </div>
 
             <div className="hamburger-menu">
