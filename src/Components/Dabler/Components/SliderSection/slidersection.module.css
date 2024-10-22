@@ -36,8 +36,10 @@
     position: absolute;
     top: 26%;
     left: 5%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     color: white;
-    width: 48%;    
+    width: 80%;    
 }
 
 
@@ -53,6 +55,61 @@
     font-size: 1.1rem;
 }
 
+.db-slide-marker-wrapper{
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.541);
+    min-width: 200px;
+    min-height: 22px;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.6rem;
+    /* margin: auto; */
+    align-items: center;
+    border-radius: 30px;
+    /* box-shadow: 0px 0px 4px 0.6px rgba(255, 255, 255, 0.829); */
+}
+
+.db-slide-marker-wrapper > * {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    /* background-color: black; */
+    border: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+.db-slide-active-marker{
+    background-color: rgb(184, 184, 184);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.db-slider-btns-wrapper{
+    display: flex;
+    position: absolute;
+    width: max-content;
+    height: fit-content;
+    min-width: 146%;
+    justify-content: space-between;
+    /* top: -160%; */
+    border: none;
+}
+
+.db-slider-btns-wrapper > .db-slider-btn{
+
+    /* padding: 10px; */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.219);
+    min-width: 40px;
+    min-height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.603);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.575);
+        color: black;
+    }
+}
 
 @media screen and (max-width : 380px) {
     .slider-text-description{

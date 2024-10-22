@@ -42,7 +42,7 @@ text-align: center; */
 
 
 
-    ol {
+    ol { 
         counter-reset: li; 
         list-style: none; 
         padding: 0;
@@ -55,7 +55,7 @@ text-align: center; */
         display: block;
         padding: .4em .4em .4em 2em;
         margin: .5em 0;
-        background: #DAD2CA;
+        background: #f9f9f9;
         color: #444;
         text-decoration: none;
         border-radius: .3em;
@@ -76,7 +76,7 @@ text-align: center; */
         left: -1.3em;
         top: 50%;
         margin-top: -1.3em;
-        background: #f9dd94;
+        background: #ffdcf7;
         height: 2em;
         width: 2em;
         border: .3em solid #fff;

@@ -51,7 +51,7 @@ export default function Navbar(props){
     React.useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         let navbar = document.getElementById('navbar');
-        const links = document.querySelectorAll('.nav-each-option > a, .right-section > a');
+        const links = document.querySelectorAll('.dc-nav-each-option > a, .right-section > a');
         // Loop through each selected <a> element and apply the style
 
         if(scrolled > 20) {
@@ -83,14 +83,14 @@ export default function Navbar(props){
 
     return (
         <>
-         <div className="nav-top-section" id="navbar"  >
+         <div className="nav-top-section" id="navbar"  > 
             <div className="name-logo-container">
                 <img src="https://dabler.online/assets/dabler_logo_02-7083de9b.svg" alt="logo"/>
             </div>
 
-            <div className="nav-options">
+            <div className="dc-nav-options">
 
-                <div className="nav-each-option">
+                <div className="dc-nav-each-option">
                     <a href="/" >Home</a>
                     {/* <div className="nav-each-hov-section">
                         <div className="nav-hov-description">We believe that people are the most important resource in any organization. We are always on the lookout for people who can embrace change to drive transformation for our customers and the communities we operate in.</div>
@@ -113,15 +113,34 @@ export default function Navbar(props){
                     </div> */}
                 </div>
 
-                <div className="nav-each-option">
+                <div className="dc-nav-each-option">
                     <a href="#" >Categories</a>
-                    <div className="nav-each-hov-section">
+                    <div className="dc-nav-each-hov-section">
                         {/* <div className="nav-hov-description">Here is the list of features available to the customers. We are always on the lookout for people who can embrace change to drive transformation for our customers and the communities we operate in</div> */}
-                        <div className="nav-hov-options">
+                        <div className="dc-nav-hov-options">
                             
-                            <div className="nav-hov-each-option">
+                            <div className="dc-nav-hov-each-option">
                                 <a href="#" className="open-sub-menu">Developers</a>
-                                <div className="nav-hov-sub-options">
+                                <div className="dc-nav-hov-sub-options">
+                                    <a href="#">Documentation</a>
+                                    <a href="#">Blogs</a>
+                                    <a href="#">Documentation</a>
+                                    <a href="#">Blogs</a>
+                                    <a href="#">Documentation</a>
+                                    <a href="#">Blogs</a>
+                                    <a href="#">Documentation</a>
+                                    <a href="#">Blogs</a>
+                                </div>
+                            </div>
+                            <div className="dc-nav-hov-each-option">
+                                <a href="#" className="open-sub-menu">Users</a>
+                                <div className="dc-nav-hov-sub-options">
+                                    <a href="#">world</a>
+                                    <a href="#">movies</a>
+                                    <a href="#">workd</a>
+                                    <a href="#">movies</a>
+                                    <a href="#">Documentation</a>
+                                    <a href="#">Blogs</a>
                                     <a href="#">Documentation</a>
                                     <a href="#">Blogs</a>
                                 </div>
@@ -134,15 +153,15 @@ export default function Navbar(props){
                     </div>
                 </div>
 
-                <div className="nav-each-option">
+                <div className="dc-nav-each-option">
                     <a href="#">Pricing</a>
                 </div>
 
-                <div className="nav-each-option">
+                <div className="dc-nav-each-option">
                     <a href="#">Try Free</a>
                 </div>  
 
-                <div className="nav-each-option">
+                <div className="dc-nav-each-option">
                     <a href="#contact-us">Contact Us</a>
                 </div>     
 

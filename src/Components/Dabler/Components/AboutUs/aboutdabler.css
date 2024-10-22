@@ -42,6 +42,7 @@
 } */
 
 
+
 .db-about-sections{
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
 
 .db-about-each-section > .db-about-each-section-img-container{
     width: 40%;
-    text-align: center;
+    text-align: center; 
     align-content: center;
 }
 
@@ -122,7 +123,8 @@
 }
 
 .db-about-each-core-value-head{
-    background: linear-gradient(to right, #5e60e7, #fa5eff);
+    /* background: linear-gradient(to right, #5e60e7, #fa5eff); */
+    background: linear-gradient(to right, #000000, #000000);
     color: transparent;
     background-clip: text;
     font-size: large;
@@ -199,7 +201,7 @@
         margin: auto;
         font-family: sans-serif;
         font-size: 1.4rem;
-        text-align: center;
+        text-align: start;
     }
 }
 
@@ -218,7 +220,7 @@
         margin: auto;
         font-family: sans-serif;
         font-size: medium;
-        text-align: center;
+        text-align: start;
     }
     
     .db-about-each-core-value{

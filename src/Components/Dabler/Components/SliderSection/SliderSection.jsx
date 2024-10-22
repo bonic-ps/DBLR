@@ -23,6 +23,16 @@ export default function SliderSection(props){
 
 const [currentSlider, setCurrentSlider] = React.useState(0);
 
+function changeSlide(data){
+   setCurrentSlider(prev => {
+      let result = prev + data;
+      const sliderCount = sliderData.length
+      if(result >= sliderCount) return 0
+      else if(result <= 0) return sliderCount-1
+      else return result
+   })
+}
+
 React.useEffect(() => {
    let intervalCode = setInterval(() => {
       setCurrentSlider(prev => {
@@ -42,6 +52,17 @@ React.useEffect(() => {
         <>
           <div className={dbslidersection["slider-top-section"]}>
              {sliders[currentSlider]}
+             <div className={dbslidersection["db-slide-marker-wrapper"]}>
+               {sliderData.map((each, idx) => {
+                  return (
+                    <div className={`${currentSlider == idx && dbslidersection["db-slide-active-marker"]} ${dbslidersection["db-each-slide-marker"]}`} key={idx}></div>
+                  )
+               })}
+               <div className={dbslidersection["db-slider-btns-wrapper"]}>
+                  <button className={dbslidersection["db-slider-btn"]} onClick={() => changeSlide(-1)} >{"<"}</button>
+                  <button className={dbslidersection["db-slider-btn"]} onClick={() => changeSlide(1)} >{">"}</button>
+               </div>
+             </div>
           </div>
         </>
     )
